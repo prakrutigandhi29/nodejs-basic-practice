@@ -1,0 +1,18 @@
+<html>
+    <head>
+        <title>
+            Profile Page
+        </title>
+    </head>
+    <body>
+        <%- include('common/header')%>
+        <h4>Name: <%= user.name %></h4>
+        <h4>Email: <%= user.email %></h4>
+        <h4>Age: <%= user.age %></h4>
+        <ul>
+            <% user.skills.forEach((item)=>{ %>
+                    <li><%= item%></li>
+           <% })%>
+        </ul>
+    </body>
+</html>
